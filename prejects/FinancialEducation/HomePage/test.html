@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/financialeducation/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="test.js"></script> 
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="../images/logo.png" alt="logo" class="logo"/></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="aboutus.php">About Us</a></li>
+          <li><a href="financialbasics.php">Financial Basics</a></li>
+          <li><a href="educationalresources.php">Educational Resources</a></li>
+          <li><a href="courses.php">Courses</a></li>
+          <li><a href="webinars-workshops.php">Webinars & Workshops</a></li>
+      </ul>
+    </div>
+    <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+      <h1>Unlock Your Financial Potential with WealthMinds</h1>
+      <p>Ready to take control of your finances and build a prosperous future?</p>
+      <div>
+        <button type="button"><span></span>Find out more</button>
+        <button type="button"><span></span>Enrol Now</button>
+      </div>
+    </div>
+  </section>
+<main>
+<!-- --- Welcome Section --- -->
+<section id="welcomeSection" class="welcome-section">
+  <div class="image-container">
+    <img src="../images/finance.jpeg" alt="">
+  </div>
+  <div class="text-container">
+    <h3>Welcome to WealthMinds, your trusted resource for financial education</h3>
+    <p>
+      Our mission is to empower individuals like you to take control of their financial futures. With our expertise and commitment to quality education, we provide you with the knowledge and tools necessary to make informed financial decisions.
+      <i class="fa-solid fa-arrow-right"></i>
+      <a href="aboutus.php">Read more</a>
+    </p>
+  </div>
+</section>
+<!-- --- Courses Section --- -->
+<section class="coursesSection" id="coursesSection">
+  <div class="courses-header">
+    <span>Our Services</span>
+    <h2>Our Services</h2>
+    <p>At WealthMinds, we are dedicated to providing comprehensive financial education and empowering individuals like you to take control of their financial future. <br>Through our range of services, we offer you the knowledge, tools, and resources needed to make informed financial decisions and achieve your goals.</p>
+  </div>
+  <div class="courses">
+    <div class="course" onmouseover="toggleCourseClass(this)" onmouseout="toggleCourseClass(this)">
+      <div class="icon">
+        <i class="fa-solid fa-lines-leaning"></i>
+      </div>
+      <h3>Financial Courses</h3>
+      <p>We offer a wide range of featured courses designed to equip you with the knowledge and skills needed to navigate the complexities of personal finance and wealth management. Whether you're a beginner or an experienced investor, our courses are tailored to meet your needs and empower you to make informed financial decisions. From budgeting and saving to investing and retirement planning, our expert instructors will guide you every step of the way.</p>
+      <button class="btn"><span></span>Find more</button>
+    </div>
+    <div class="course" onmouseover="toggleCourseClass(this)" onmouseout="toggleCourseClass(this)">
+      <div class="icon">
+        <i class="fa-solid fa-file"></i>
+      </div>
+      <h3>Learning Resources</h3>
+      <p>We provide a wealth of financial resources to supplement your learning and help you further expand your knowledge base. Our collection of resources includes e-books, guides, infographics, and interactive tools, all aimed at providing practical insights and actionable advice. Explore our resource library to access valuable information on various financial topics, such as budgeting, debt management, tax planning, and more.</p>
+      <button class="btn"><span></span>Enroll now</button>
+    </div>
+    <div class="course" onmouseover="toggleCourseClass(this)" onmouseout="toggleCourseClass(this)">
+      <div class="icon">
+       <i class="fa-solid fa-chalkboard-user"></i>
+      </div>
+      <h3>Webinars & Workshops</h3>
+      <p>We believe in the power of interactive learning experiences, which is why we offer engaging webinars and workshops conducted by industry experts. These live sessions provide an opportunity to dive deeper into specific financial topics, ask questions, and engage in discussions with both instructors and fellow learners. Our webinars and workshops cover a wide range of subjects, from advanced investment strategies to financial planning for major life events. Stay updated with our event calendar to participate in these insightful sessions and gain practical insights from experienced professionals.</p>
+      <button class="btn"><span></span>Enroll now</button>
+    </div>
+  </div>
+</section>
+<!-- --- Review Section --- -->
+<!-- <section class="review-container"> -->
+  <!-- <h2>Stories of Growth and Success</h2> -->
+  <!-- <div class="testimonial">
+    <div class="testimonial-card">
+      <div class="slide active">
+        <img src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303" alt="" class="img" />
+      
+        <p>
+          I can't express enough how grateful I am for this financial education website. Before discovering it, I felt completely lost when it came to managing my money. But the courses provided clear, practical guidance on budgeting, investing, and debt management. Thanks to the knowledge I gained, I've paid off my credit card debt and started saving for my future. The instructors were knowledgeable, the content was engaging, and I highly recommend this website to anyone looking to take control of their finances.
+        </p>
+          <div class="details">
+          <span class="name">Emily Johnson</span>
+          <span class="job">Project Manager</span>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303" alt="" class="img" />
+      <div class="details">
+        <span class="name">Michael Anderson</span>
+        <span class="job">Business Owner</span>
+      </div>
+      <p>
+        I can't thank this financial education website enough for the impact it has had on my financial well-being. As a small business owner, I always struggled with understanding financial statements and managing cash flow effectively. The courses provided on this website were a game-changer for me. The instructors broke down complex financial concepts into digestible lessons, and the real-life examples and case studies helped me apply what I learned to my own business. With the knowledge gained, I was able to analyze my financials better, make informed decisions, and ultimately improve my business's profitability. This website is a hidden gem for entrepreneurs looking to strengthen their financial acumen.
+      </p>
+    </div>
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303" alt="" class="img" />
+      <div class="details">
+        <span class="name">Sarah Martinez</span>
+        <span class="job">Developer</span>
+      </div>
+      <p>
+        I recently went through a major life transition, and I needed to reassess my financial situation. That's when I stumbled upon this amazing financial education website. The resources available were incredible - from practical worksheets to insightful articles. I particularly loved the step-by-step guides on creating a budget and saving for emergencies. The website's blog also provided valuable tips and real-life examples that made the content relatable. Thanks to this website, I now feel more confident in managing my finances and planning for a secure future. I'm truly grateful for the knowledge I gained here.
+      </p>
+    </div>
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303" alt="" class="img" />
+      <div class="details">
+        <span class="name">John Thompson</span>
+        <span class="job">Engineer</span>
+      </div>
+      <p>
+        As a young professional, I knew I needed to learn more about personal finance, but I didn't know where to start. Thankfully, I found this financial education website, and it has been a game-changer for me. The courses were comprehensive and well-structured, covering everything from basic financial principles to advanced investing strategies. The instructors explained complex concepts in a way that was easy to understand, and the interactive quizzes helped reinforce my learning. I've since made smarter financial decisions, increased my savings, and even started investing. This website is a must for anyone seeking financial empowerment.
+      </p>
+    </div>
+  </div>
+</section> -->
+
+<form id="searchForm" method="post">
+  <input type="number" name="duration" id="durationInput" placeholder="Duration">
+  <input type="number" name="price" id="priceInput" placeholder="Price">
+  <button type="submit">Search</button>
+</form>
+
+<div id="searchResults"></div>
+
+
+
+
+
+
+
+<!-- <section class="contactForm">
+  <div class="map"> 
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d182321.8188514326!2d25.92983107585364!3d44.437707259681076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f93abf3cad4f%3A0xac0632e37c9ca628!2sBucharest!5e0!3m2!1sen!2sro!4v1687938321963!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="contact-form">
+    <div class="form-header">
+      <h2>Help us reach out</h2>
+      <p>.....</p>
+    </div>
+    <form>
+      <label class="form-label" for="contactFormFirstName">First Name</label>
+      <input type="text" class="form-control form-control-lg" name="contactFormFirstName" id="contactFormFirstName" placeholder="First Name" aria-label="First Name">
+
+      <label class="form-label" for="contactFormLastName">Last Name</label>
+      <input type="text" class="form-control form-control-lg" name="contactFormLastName" id="contactFormLastName" placeholder="Last Name" aria-label="Last Name">
+
+      <label class="form-label" for="contactUsEmail">Email Address</label>
+      <input type="email" class="form-control form-control-lg" name="contactUsEmail" id="contactUsEmail" placeholder="email@gmail.com" aria-label="Email Address">
+
+      <label class="form-label" for="contactUsPhone">Phone</label>
+      <input type="text" class="form-control form-control-lg" name="contactUsPhone" id="contactUsPhone" placeholder="Phone Number">
+
+      <label class="form-label" for="hireUsFormDetails">Message</label>
+    
+
+      <button type="submit" class="btn btn-primary btn-lg">Send</button>
+    </form>
+  </div>
+</section> -->
+
+
+<!-- Cookie consent banner -->
+  <!-- <div id="cookieConsent" class="cookie-consent">
+    This website uses cookies to ensure you get the best experience. By using our site, you consent to our use of cookies.
+    <button onclick="dismissCookieConsent()">Got it!</button>
+  </div>
+ -->
+
+
+</main>  
+ 
+ 
+</body>
+</html>

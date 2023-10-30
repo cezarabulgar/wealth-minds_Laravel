@@ -1,0 +1,82 @@
+<style>
+.carousel {
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel .card{
+  position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    
+}
+
+.card{
+  background: linear-gradient(rgba(103, 28, 119), rgba(34, 5, 62));
+  color: #fff;
+  width: 100%;
+  height: 40%;
+  transition: opacity 0.5s;
+  opacity: 0;
+  border-radius: 20px;
+  margin: 10px;
+}
+.card.active{
+  opacity: 1;
+}
+
+.img img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+
+</style>
+
+<section class="review-section">
+  <div class="carousel">
+    <div class="card active"> 
+      <div class="img"> <img src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303" alt=""></div>
+      <h3>Emily Johnson</h3>
+      <span>Project Manager</span>
+      <p>I can't express enough how grateful I am for this financial education website. Before discovering it, I felt completely lost when it came to managing my money. But the courses provided clear, practical guidance on budgeting, investing, and debt management. Thanks to the knowledge I gained, I've paid off my credit card debt and started saving for my future. The instructors were knowledgeable, the content was engaging, and I highly recommend this website to anyone looking to take control of their finances.</p>
+    </div>
+    <div class="card"> 
+      <div class="img"> <img src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303" alt=""></div>
+      <h3>Michael Anderson</h3>
+      <span>Business Owner</span>
+      <p>I can't thank this financial education website enough for the impact it has had on my financial well-being. As a small business owner, I always struggled with understanding financial statements and managing cash flow effectively. The courses provided on this website were a game-changer for me. The instructors broke down complex financial concepts into digestible lessons, and the real-life examples and case studies helped me apply what I learned to my own business. With the knowledge gained, I was able to analyze my financials better, make informed decisions, and ultimately improve my business's profitability. This website is a hidden gem for entrepreneurs looking to strengthen their financial acumen.</p>
+    </div>
+    <div class="card"> 
+      <div class="img"> <img src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303" alt=""></div>
+      <h3>Sarah Martinez</h3>
+      <span>Developer</span>
+      <p>I recently went through a major life transition, and I needed to reassess my financial situation. That's when I stumbled upon this amazing financial education website. The resources available were incredible - from practical worksheets to insightful articles. I particularly loved the step-by-step guides on creating a budget and saving for emergencies. The website's blog also provided valuable tips and real-life examples that made the content relatable. Thanks to this website, I now feel more confident in managing my finances and planning for a secure future. I'm truly grateful for the knowledge I gained here.</p>
+    </div>
+    <div class="card"> 
+      <div class="img"> <img src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303" alt=""></div>
+      <h3>John Thompson</h3>
+      <span>Engineer</span>
+      <p>As a young professional, I knew I needed to learn more about personal finance, but I didn't know where to start. Thankfully, I found this financial education website, and it has been a game-changer for me. The courses were comprehensive and well-structured, covering everything from basic financial principles to advanced investing strategies. The instructors explained complex concepts in a way that was easy to understand, and the interactive quizzes helped reinforce my learning. I've since made smarter financial decisions, increased my savings, and even started investing. This website is a must for anyone seeking financial empowerment.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+//     // JavaScript code
+// const carousel = document.querySelector('.carousel');
+// const cards = document.querySelectorAll('.card');
+// let currentIndex = 0;
+
+// function showNextCard() {
+//   cards[currentIndex].classList.remove('active');
+//   currentIndex = (currentIndex + 1) % cards.length;
+//   cards[currentIndex].classList.add('active');
+// }
+
+// setInterval(showNextCard, 3000);
+
+</script>
